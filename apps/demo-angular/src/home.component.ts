@@ -8,6 +8,9 @@ export class HomeComponent {
 	demos = [
 	{
 		name: 'nativescript-label-marquee'
+	},
+	{
+		name: 'ns-azure-push-notification'
 	}
 ];
 }

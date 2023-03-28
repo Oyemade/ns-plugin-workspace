@@ -68,6 +68,13 @@ module.exports = {
 					description: '@ups-test/nativescript-label-marquee: Build',
 				},
 			},
+			// ns-azure-push-notification
+			'ns-azure-push-notification': {
+				build: {
+					script: 'nx run ns-azure-push-notification:build.all',
+					description: 'ns-azure-push-notification: Build',
+				},
+			},
 			'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
@@ -81,6 +88,10 @@ module.exports = {
       'nativescript-label-marquee': {
 				script: 'nx run nativescript-label-marquee:focus',
 				description: 'Focus on @ups-test/nativescript-label-marquee',
+			},
+			'ns-azure-push-notification': {
+				script: 'nx run ns-azure-push-notification:focus',
+				description: 'Focus on ns-azure-push-notification',
 			},
 			reset: {
         script: 'nx g @ups-test/plugin-tools:focus-packages',

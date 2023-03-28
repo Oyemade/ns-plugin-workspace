@@ -1,0 +1,73 @@
+{
+  "name": "ns-azure-push-notification",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "library",
+  "sourceRoot": "packages/ns-azure-push-notification",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/packages/ns-azure-push-notification",
+        "tsConfig": "packages/ns-azure-push-notification/tsconfig.json",
+        "packageJson": "packages/ns-azure-push-notification/package.json",
+        "main": "packages/ns-azure-push-notification/index.d.ts",
+        "assets": [
+          "packages/ns-azure-push-notification/*.md",
+          "packages/ns-azure-push-notification/index.d.ts",
+          "LICENSE",
+          {
+            "glob": "**/*",
+            "input": "packages/ns-azure-push-notification/platforms/",
+            "output": "./platforms/"
+          }
+        ],
+        "dependsOn": [
+          {
+            "target": "build.all",
+            "projects": "dependencies"
+          }
+        ]
+      }
+    },
+    "build.all": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "node tools/scripts/build-finish.ts ns-azure-push-notification"
+        ],
+        "parallel": false
+      },
+      "outputs": [
+        "dist/packages/ns-azure-push-notification"
+      ],
+      "dependsOn": [
+        {
+          "target": "build.all",
+          "projects": "dependencies"
+        },
+        {
+          "target": "build",
+          "projects": "self"
+        }
+      ]
+    },
+    "focus": {
+      "executor": "nx:run-commands",
+      "options": {
+        "commands": [
+          "nx g @nativescript/plugin-tools:focus-packages ns-azure-push-notification"
+        ],
+        "parallel": false
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "packages/ns-azure-push-notification/**/*.ts"
+        ]
+      }
+    }
+  },
+  "tags": []
+}

@@ -1,11 +1,5 @@
-# @ups-test/\* plugins
-
-```
-npm run setup
-npm start
-```
-
 - [@ups-test/nativescript-label-marquee](packages/nativescript-label-marquee/README.md)
+- [ns-azure-push-notification](packages/ns-azure-push-notification/README.md)
 
 # How to use?
 
