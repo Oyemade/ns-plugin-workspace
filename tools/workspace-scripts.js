@@ -55,13 +55,20 @@ module.exports = {
       },
     },
     '⚙️': {
-      script: `npx cowsay "@nativescript/* packages will keep your ⚙️ cranking"`,
-      description: '_____________  @nativescript/*  _____________',
+      script: `npx cowsay "@ups-test/* packages will keep your ⚙️ cranking"`,
+      description: '_____________  @ups-test/*  _____________',
     },
     // packages
     // build output is always in dist/packages
-    '@nativescript': {
-      'build-all': {
+    '@ups-test': {
+      // @ups-test/nativescript-label-marquee
+			'nativescript-label-marquee': {
+				build: {
+					script: 'nx run nativescript-label-marquee:build.all',
+					description: '@ups-test/nativescript-label-marquee: Build',
+				},
+			},
+			'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
       },
@@ -71,8 +78,12 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
-      reset: {
-        script: 'nx g @nativescript/plugin-tools:focus-packages',
+      'nativescript-label-marquee': {
+				script: 'nx run nativescript-label-marquee:focus',
+				description: 'Focus on @ups-test/nativescript-label-marquee',
+			},
+			reset: {
+        script: 'nx g @ups-test/plugin-tools:focus-packages',
         description: 'Reset Focus',
       },
     },
