@@ -3,9 +3,9 @@
   "compilerOptions": {
     "baseUrl": ".",
     "paths": {
-      "@ups-test/*": [
-        "../../packages/*"
-      ]
+      "@ups-test/*": ["../../packages/*"],
+      "ns-azure-push-notification": ["../../packages/ns-azure-push-notification/index.d.ts"],
+      "ns-azure-push-notification/*": ["../../packages/ns-azure-push-notification/*"]
     }
   }
 }

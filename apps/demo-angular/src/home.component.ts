@@ -1,16 +1,13 @@
 import { Component } from '@angular/core';
 
 @Component({
-	selector: 'demo-home',
-	templateUrl: 'home.component.html',
+  selector: 'demo-home',
+  templateUrl: 'home.component.html',
 })
 export class HomeComponent {
-	demos = [
-	{
-		name: 'nativescript-label-marquee'
-	},
-	{
-		name: 'ns-azure-push-notification'
-	}
-];
+  demos = [
+    {
+      name: 'ns-azure-push-notification',
+    },
+  ];
 }

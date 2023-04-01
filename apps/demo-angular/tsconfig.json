@@ -2,23 +2,13 @@
   "extends": "../../tsconfig.base.json",
   "compilerOptions": {
     "paths": {
-      "~/*": [
-        "src/*"
-      ],
-      "@demo/shared": [
-        "tools/demo/index.ts"
-      ],
-      "@ups-test/*": [
-        "../../dist/packages/*"
-      ]
+      "~/*": ["src/*"],
+      "@demo/shared": ["tools/demo/index.ts"],
+      "@ups-test/*": ["../../dist/packages/*"],
+      "ns-azure-push-notification/*": ["../../packages/ns-azure-push-notification/*"],
+      "ns-azure-push-notification": ["../../packages/ns-azure-push-notification/index.d.ts"]
     }
   },
-  "files": [
-    "./references.d.ts",
-    "./src/main.ts",
-    "./src/polyfills.ts"
-  ],
-  "include": [
-    "../../packages/**/references.d.ts"
-  ]
+  "files": ["./references.d.ts", "./src/main.ts", "./src/polyfills.ts"],
+  "include": ["../../packages/ns-azure-push-notification/**/*.ts", "../../packages/**/references.d.ts"]
 }

@@ -1,5 +1,13 @@
-import { NsAzurePushNotificationCommon } from './common';
+import { AzurePushNotificationCommon } from './common';
 
-export class NsAzurePushNotification extends NsAzurePushNotificationCommon {
-
+export class AzurePushNotification implements AzurePushNotificationCommon {
+  init(connectionString: string, hubName: string): Promise<void> {
+    return Promise.resolve();
+  }
+  register(deviceToken: string, tags: string[]): Promise<void> {
+    return Promise.resolve();
+  }
+  unregister(): Promise<void> {
+    return Promise.resolve();
+  }
 }
