@@ -61,21 +61,14 @@ module.exports = {
     // packages
     // build output is always in dist/packages
     '@ups-test': {
-      // @ups-test/nativescript-label-marquee
-			'nativescript-label-marquee': {
-				build: {
-					script: 'nx run nativescript-label-marquee:build.all',
-					description: '@ups-test/nativescript-label-marquee: Build',
-				},
-			},
-			// ns-azure-push-notification
-			'ns-azure-push-notification': {
-				build: {
-					script: 'nx run ns-azure-push-notification:build.all',
-					description: 'ns-azure-push-notification: Build',
-				},
-			},
-			'build-all': {
+      // ns-azure-push-notification
+      'ns-azure-push-notification': {
+        build: {
+          script: 'nx run ns-azure-push-notification:build.all',
+          description: 'ns-azure-push-notification: Build',
+        },
+      },
+      'build-all': {
         script: 'nx run-many --target=build.all --all',
         description: 'Build all packages',
       },
@@ -85,15 +78,11 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
-      'nativescript-label-marquee': {
-				script: 'nx run nativescript-label-marquee:focus',
-				description: 'Focus on @ups-test/nativescript-label-marquee',
-			},
-			'ns-azure-push-notification': {
-				script: 'nx run ns-azure-push-notification:focus',
-				description: 'Focus on ns-azure-push-notification',
-			},
-			reset: {
+      'ns-azure-push-notification': {
+        script: 'nx run ns-azure-push-notification:focus',
+        description: 'Focus on ns-azure-push-notification',
+      },
+      reset: {
         script: 'nx g @ups-test/plugin-tools:focus-packages',
         description: 'Reset Focus',
       },

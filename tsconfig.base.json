@@ -9,10 +9,7 @@
     "noEmitHelpers": true,
     "target": "ES2020",
     "module": "ESNext",
-    "lib": [
-      "ESNext",
-      "dom"
-    ],
+    "lib": ["ESNext", "dom"],
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
@@ -23,22 +20,11 @@
       }
     ],
     "paths": {
-      "@demo/shared": [
-        "tools/demo/index.ts"
-      ],
-      "@ups-test/*": [
-        "packages/*"
-      ],
-      "@ups-test/nativescript-label-marquee": [
-        "packages/nativescript-label-marquee/index.d.ts"
-      ],
-      "ns-azure-push-notification": [
-        "packages/ns-azure-push-notification/index.d.ts"
-      ]
+      "@demo/shared": ["tools/demo/index.ts"],
+      "@ups-test/*": ["packages/*"],
+      "ns-azure-push-notification": ["packages/ns-azure-push-notification/index.d.ts"],
+      "ns-azure-push-notification/*": ["packages/ns-azure-push-notification/*"]
     }
   },
-  "exclude": [
-    "node_modules",
-    "tmp"
-  ]
+  "exclude": ["node_modules", "tmp"]
 }
