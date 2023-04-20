@@ -2,7 +2,7 @@
   "main": "./src/main.ts",
   "dependencies": {
     "@nativescript/core": "file:../../node_modules/@nativescript/core",
-    "ns-azure-push-notification": "file:../../packages/ns-azure-push-notification"
+    "@oyemade/azure-messaging": "file:../../packages/azure-messaging"
   },
   "devDependencies": {
     "@nativescript/android": "~8.5.0",

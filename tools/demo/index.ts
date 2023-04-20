@@ -1,2 +1,2 @@
 export * from './utils';
-export * from './ns-azure-push-notification';
+export * from './azure-messaging';

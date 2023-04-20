@@ -6,7 +6,7 @@ module.exports = (env) => {
   webpack.useConfig('angular');
 
   webpack.chainWebpack((config) => {
-    config.resolve.alias.set('ns-azure-push-notification', resolve(__dirname, '../../packages/ns-azure-push-notification'));
+    config.resolve.alias.set('@oyemade/azure-messaging', resolve(__dirname, '../../packages/azure-messaging'));
 
     // shared demo code
     config.resolve.alias.set('@demo/shared', resolve(__dirname, '../../tools/demo'));

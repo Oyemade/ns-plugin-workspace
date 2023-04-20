@@ -6,9 +6,7 @@
     "paths": {
       "~/*": ["src/*"],
       "@demo/shared": ["../../tools/demo/index.ts"],
-      "@ups-test/*": ["../../packages/*"],
-      "ns-azure-push-notification/*": ["../../packages/ns-azure-push-notification/*"],
-      "ns-azure-push-notification": ["../../packages/ns-azure-push-notification/index.d.ts"]
+      "@oyemade/azure-messaging": ["../../packages/azure-messaging/index.d.ts"]
     }
   }
 }
