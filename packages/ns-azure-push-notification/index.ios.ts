@@ -1,7 +1,7 @@
 import { AzurePushNotificationCommon } from './common';
-import { Application, Utils } from '@nativescript/core';
+import { Application, Observable, Utils } from '@nativescript/core';
 
-export class AzurePushNotification implements AzurePushNotificationCommon {
+export class AzurePushNotification extends Observable implements AzurePushNotificationCommon {
   delegate: MSNotificationHubDelegateImpl;
 
   public init(connectionString: string, hubName: string): Promise<void> {
@@ -52,9 +52,17 @@ class MSNotificationHubDelegateImpl extends NSObject implements MSNotificationHu
   }
   notificationHubDidReceivePushNotification?(notificationHub: MSNotificationHub, message: MSNotificationHubMessage): void {
     console.log('notificationHubDidReceivePushNotification', message);
+    const owner = this.owner.deref();
+    if (owner) {
+      owner.notify({
+        eventName: 'didReceiveNotification',
+        object: owner,
+        message: message,
+      });
+    }
   }
 
   notificationHubDidRequestAuthorizationError?(notificationHub: MSNotificationHub, granted: boolean, error: NSError): void {
-    console.log('notificationHubDidRequestAuthorizationError, was granted?', granted, ' ...did it have an error?', error);
+    console.log('notificationHubDidRequestAuthorizationError, was granted?', granted, ' ...did it have an error?', error, 'Hub', notificationHub);
   }
 }
