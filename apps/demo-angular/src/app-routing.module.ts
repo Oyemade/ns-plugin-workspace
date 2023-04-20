@@ -7,7 +7,7 @@ import { HomeComponent } from './home.component';
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
-  { path: 'ns-azure-push-notification', loadChildren: () => import('./plugin-demos/ns-azure-push-notification.module').then((m) => m.NsAzurePushNotificationModule) },
+  { path: 'azure-messaging', loadChildren: () => import('./plugin-demos/azure-messaging.module').then((m) => m.AzureMessagingModule) },
 ];
 
 @NgModule({

@@ -3,4 +3,4 @@ node_js:
   - "node"
 script:
 - npm run setup
-- npm start @ups-test.build-all
+- npm start @oyemade.build-all

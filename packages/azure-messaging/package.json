@@ -1,7 +1,7 @@
 {
-  "name": "ns-azure-push-notification",
+  "name": "@oyemade/azure-messaging",
   "version": "1.0.0",
-  "description": "Add a plugin description",
+  "description": "Windows Azure Messaging SDK for NativeScript",
   "main": "index",
   "typings": "index.d.ts",
   "nativescript": {

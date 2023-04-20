@@ -8,30 +8,12 @@ declare module com {
           public loadCustomXmlData(param0: org.w3c.dom.Element): void;
           public appendCustomPayload(param0: org.w3c.dom.Document, param1: org.w3c.dom.Element): void;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class AdmTemplateRegistration extends com.microsoft.windowsazure.messaging.TemplateRegistration {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.AdmTemplateRegistration>;
           public getSpecificPayloadNodeName(): string;
           public loadCustomXmlData(param0: org.w3c.dom.Element): void;
           public appendCustomPayload(param0: org.w3c.dom.Document, param1: org.w3c.dom.Element): void;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class BaiduNativeRegistration extends com.microsoft.windowsazure.messaging.Registration {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.BaiduNativeRegistration>;
           public mUserId: string;
@@ -42,15 +24,6 @@ declare module com {
           public getChannelId(): string;
           public getUserId(): string;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class BaiduTemplateRegistration extends com.microsoft.windowsazure.messaging.TemplateRegistration {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.BaiduTemplateRegistration>;
           public mUserId: string;
@@ -61,15 +34,6 @@ declare module com {
           public getChannelId(): string;
           public getUserId(): string;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class BuildConfig {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.BuildConfig>;
           public static DEBUG: boolean;
@@ -80,30 +44,12 @@ declare module com {
           public static VERSION_NAME: string;
           public constructor();
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class Connection {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.Connection>;
           public executeRequest(param0: string, param1: string, param2: string, param3: string, param4: androidNative.Array<java.util.AbstractMap.SimpleEntry<string, string>>): string;
           public constructor(param0: string);
           public executeRequest(param0: string, param1: string, param2: string, param3: string, param4: string, param5: androidNative.Array<java.util.AbstractMap.SimpleEntry<string, string>>): string;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class ConnectionString {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.ConnectionString>;
           public constructor();
@@ -111,15 +57,6 @@ declare module com {
           public static createUsingSharedAccessKey(param0: java.net.URI, param1: string, param2: string): string;
           public static createUsingSharedAccessKeyWithFullAccess(param0: java.net.URI, param1: string): string;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class ConnectionStringParser {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.ConnectionStringParser>;
           public static parse(param0: string): java.util.Map<string, string>;
@@ -135,75 +72,30 @@ declare module com {
             public static values(): androidNative.Array<com.microsoft.windowsazure.messaging.ConnectionStringParser.ParserState>;
           }
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class FcmNativeRegistration extends com.microsoft.windowsazure.messaging.Registration {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.FcmNativeRegistration>;
           public getSpecificPayloadNodeName(): string;
           public loadCustomXmlData(param0: org.w3c.dom.Element): void;
           public appendCustomPayload(param0: org.w3c.dom.Document, param1: org.w3c.dom.Element): void;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class FcmTemplateRegistration extends com.microsoft.windowsazure.messaging.TemplateRegistration {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.FcmTemplateRegistration>;
           public getSpecificPayloadNodeName(): string;
           public loadCustomXmlData(param0: org.w3c.dom.Element): void;
           public appendCustomPayload(param0: org.w3c.dom.Document, param1: org.w3c.dom.Element): void;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class GcmNativeRegistration extends com.microsoft.windowsazure.messaging.Registration {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.GcmNativeRegistration>;
           public getSpecificPayloadNodeName(): string;
           public loadCustomXmlData(param0: org.w3c.dom.Element): void;
           public appendCustomPayload(param0: org.w3c.dom.Document, param1: org.w3c.dom.Element): void;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class GcmTemplateRegistration extends com.microsoft.windowsazure.messaging.TemplateRegistration {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.GcmTemplateRegistration>;
           public getSpecificPayloadNodeName(): string;
           public loadCustomXmlData(param0: org.w3c.dom.Element): void;
           public appendCustomPayload(param0: org.w3c.dom.Document, param1: org.w3c.dom.Element): void;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class NotificationHub {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.NotificationHub>;
           public registerBaidu(param0: string, param1: string, param2: androidNative.Array<string>): com.microsoft.windowsazure.messaging.Registration;
@@ -219,52 +111,16 @@ declare module com {
           public getNotificationHubPath(): string;
           public setNotificationHubPath(param0: string): void;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class NotificationHubException {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.NotificationHubException>;
           public getStatusCode(): number;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class NotificationHubResourceNotFoundException extends com.microsoft.windowsazure.messaging.NotificationHubException {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.NotificationHubResourceNotFoundException>;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class NotificationHubUnauthorizedException extends com.microsoft.windowsazure.messaging.NotificationHubException {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.NotificationHubUnauthorizedException>;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class PnsSpecificRegistrationFactory {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.PnsSpecificRegistrationFactory>;
           public static getInstance(): com.microsoft.windowsazure.messaging.PnsSpecificRegistrationFactory;
@@ -275,15 +131,6 @@ declare module com {
           public getAPIOrigin(): string;
           public getPNSHandleFieldName(): string;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export abstract class Registration {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.Registration>;
           public mRegistrationType: com.microsoft.windowsazure.messaging.Registration.RegistrationType;
@@ -322,27 +169,9 @@ declare module com {
             public static values(): androidNative.Array<com.microsoft.windowsazure.messaging.Registration.RegistrationType>;
           }
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class RegistrationGoneException {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.RegistrationGoneException>;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export abstract class TemplateRegistration extends com.microsoft.windowsazure.messaging.Registration {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.TemplateRegistration>;
           public loadCustomXmlData(param0: org.w3c.dom.Element): void;
@@ -350,149 +179,11 @@ declare module com {
           public getTemplateName(): string;
           public getBodyTemplate(): string;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export class Utils {
           public static class: java.lang.Class<com.microsoft.windowsazure.messaging.Utils>;
           public static isNullOrWhiteSpace(param0: string): boolean;
           public static getXmlString(param0: org.w3c.dom.Element): string;
         }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
-          export class AuthorizationException extends com.microsoft.windowsazure.messaging.notificationhubs.NotificationHubException {
-            public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.AuthorizationException>;
-          }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
-          export class BasicNotificationMessage extends com.microsoft.windowsazure.messaging.notificationhubs.NotificationMessage {
-            public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.BasicNotificationMessage>;
-            public getBody(): string;
-            public getData(): java.util.Map<string, string>;
-            public constructor(param0: string, param1: string, param2: java.util.Map<string, string>);
-            public getTitle(): string;
-          }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
-          export class ClientException extends com.microsoft.windowsazure.messaging.notificationhubs.NotificationHubException {
-            public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.ClientException>;
-          }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
-          export class ConnectionString {
-            public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.ConnectionString>;
-            public getSharedAccessKey(): string;
-            public getEndpoint(): string;
-            public getSharedAccessKeyName(): string;
-            public equals(param0: any): boolean;
-            public static parse(param0: string): com.microsoft.windowsazure.messaging.notificationhubs.ConnectionString;
-            public toString(): string;
-          }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
-          export class DebounceInstallationAdapter extends com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter {
-            public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.DebounceInstallationAdapter>;
-            public saveInstallation(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation, param1: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter.Listener, param2: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter.ErrorListener): void;
-            public constructor(param0: globalAndroid.content.Context, param1: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter, param2: number);
-            public constructor(param0: globalAndroid.content.Context, param1: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter);
-          }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
-          export class FirebaseReceiver {
-            public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.FirebaseReceiver>;
-            public constructor(param0: com.microsoft.windowsazure.messaging.notificationhubs.NotificationHub);
-            public onNewToken(param0: string): void;
-            public constructor();
-            public onCreate(): void;
-            public onMessageReceived(param0: com.google.firebase.messaging.RemoteMessage): void;
-          }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
-          export class IdAssignmentVisitor extends com.microsoft.windowsazure.messaging.notificationhubs.InstallationVisitor {
-            public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.IdAssignmentVisitor>;
-            public constructor(param0: globalAndroid.content.Context);
-            public setInstallationId(param0: string): void;
-            public getInstallationId(): string;
-            public visitInstallation(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation): void;
-          }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
         export module notificationhubs {
           export class Installation extends com.microsoft.windowsazure.messaging.notificationhubs.Taggable {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.Installation>;
@@ -516,17 +207,16 @@ declare module com {
             public getTemplates(): java.util.Map<string, com.microsoft.windowsazure.messaging.notificationhubs.InstallationTemplate>;
             public getExpiration(): java.util.Date;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
+          export class IdAssignmentVisitor extends com.microsoft.windowsazure.messaging.notificationhubs.InstallationVisitor {
+            public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.IdAssignmentVisitor>;
+            public constructor(param0: globalAndroid.content.Context);
+            public setInstallationId(param0: string): void;
+            public getInstallationId(): string;
+            public visitInstallation(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation): void;
+          }
+          export class AuthorizationException extends com.microsoft.windowsazure.messaging.notificationhubs.NotificationHubException {
+            public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.AuthorizationException>;
+          }
           export class InstallationAdapter {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter>;
             /**
@@ -555,18 +245,40 @@ declare module com {
               public constructor();
               public onInstallationSaved(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation): void;
             }
+            export class ConnectionString {
+              public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.ConnectionString>;
+              public getSharedAccessKey(): string;
+              public getEndpoint(): string;
+              public getSharedAccessKeyName(): string;
+              public equals(param0: any): boolean;
+              public static parse(param0: string): com.microsoft.windowsazure.messaging.notificationhubs.ConnectionString;
+              public toString(): string;
+            }
+            export class BasicNotificationMessage extends com.microsoft.windowsazure.messaging.notificationhubs.NotificationMessage {
+              public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.BasicNotificationMessage>;
+              public getBody(): string;
+              public getData(): java.util.Map<string, string>;
+              public constructor(param0: string, param1: string, param2: java.util.Map<string, string>);
+              public getTitle(): string;
+            }
+            export class ClientException extends com.microsoft.windowsazure.messaging.notificationhubs.NotificationHubException {
+              public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.ClientException>;
+            }
+            export class DebounceInstallationAdapter extends com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter {
+              public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.DebounceInstallationAdapter>;
+              public saveInstallation(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation, param1: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter.Listener, param2: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter.ErrorListener): void;
+              public constructor(param0: globalAndroid.content.Context, param1: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter, param2: number);
+              public constructor(param0: globalAndroid.content.Context, param1: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter);
+            }
+            export class FirebaseReceiver {
+              public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.FirebaseReceiver>;
+              public constructor(param0: com.microsoft.windowsazure.messaging.notificationhubs.NotificationHub);
+              public onNewToken(param0: string): void;
+              public constructor();
+              public onCreate(): void;
+              public onMessageReceived(param0: com.google.firebase.messaging.RemoteMessage): void;
+            }
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class InstallationPutRequest {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.InstallationPutRequest>;
             public getHeaders(): java.util.Map<string, string>;
@@ -576,17 +288,6 @@ declare module com {
             public static wrapListener(param0: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter.Listener, param1: com.microsoft.windowsazure.messaging.notificationhubs.Installation): com.android.volley.Response.Listener;
             public parseNetworkResponse(param0: com.android.volley.NetworkResponse): com.android.volley.Response<org.json.JSONObject>;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class InstallationTemplate {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.InstallationTemplate>;
             public constructor();
@@ -604,17 +305,6 @@ declare module com {
             public removeHeader(param0: string): void;
             public setHeader(param0: string, param1: string): void;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class InstallationVisitor {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.InstallationVisitor>;
             /**
@@ -624,17 +314,6 @@ declare module com {
             public constructor();
             public visitInstallation(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation): void;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class NetworkStateHelper {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.NetworkStateHelper>;
             public static getSharedInstance(param0: globalAndroid.content.Context): com.microsoft.windowsazure.messaging.notificationhubs.NetworkStateHelper;
@@ -661,17 +340,6 @@ declare module com {
               public onNetworkStateUpdated(param0: boolean): void;
             }
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class NotificationHub {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.NotificationHub>;
             public static getPushChannel(): string;
@@ -720,49 +388,16 @@ declare module com {
             public static start(param0: globalAndroid.app.Application, param1: string, param2: string): void;
             public getInstanceUserId(): string;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class NotificationHubException {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.NotificationHubException>;
             public getStatusCode(): number;
             public getResponseBody(): string;
             public getResponseHeaders(): java.util.Map<string, string>;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class NotificationHubExtension {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.NotificationHubExtension>;
             public static fetchPushChannel(param0: com.microsoft.windowsazure.messaging.notificationhubs.NotificationHub): void;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class NotificationHubInstallationAdapter extends com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.NotificationHubInstallationAdapter>;
             public saveInstallation(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation, param1: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter.Listener, param2: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter.ErrorListener): void;
@@ -776,17 +411,6 @@ declare module com {
               public constructor(param0: com.microsoft.windowsazure.messaging.notificationhubs.NotificationHubInstallationAdapter, param1: com.microsoft.windowsazure.messaging.notificationhubs.Installation, param2: number, param3: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter.Listener, param4: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter.ErrorListener);
             }
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class NotificationListener {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.NotificationListener>;
             /**
@@ -796,17 +420,6 @@ declare module com {
             public constructor();
             public onPushNotificationReceived(param0: globalAndroid.content.Context, param1: com.microsoft.windowsazure.messaging.notificationhubs.NotificationMessage): void;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class NotificationMessage {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.NotificationMessage>;
             /**
@@ -818,17 +431,6 @@ declare module com {
             public getData(): java.util.Map<string, string>;
             public getTitle(): string;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class PushChannelValidationAdapter extends com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.PushChannelValidationAdapter>;
             public static DEFAULT_MAX_RETRIES: number;
@@ -836,17 +438,6 @@ declare module com {
             public constructor(param0: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter, param1: number);
             public constructor(param0: com.microsoft.windowsazure.messaging.notificationhubs.InstallationAdapter);
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class PushChannelVisitor extends com.microsoft.windowsazure.messaging.notificationhubs.InstallationVisitor {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.PushChannelVisitor>;
             public constructor(param0: globalAndroid.content.Context);
@@ -854,31 +445,9 @@ declare module com {
             public getPushChannel(): string;
             public visitInstallation(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation): void;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class ServerException extends com.microsoft.windowsazure.messaging.notificationhubs.NotificationHubException {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.ServerException>;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class TagVisitor implements com.microsoft.windowsazure.messaging.notificationhubs.InstallationVisitor, com.microsoft.windowsazure.messaging.notificationhubs.Taggable {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.TagVisitor>;
             public addTag(param0: string): boolean;
@@ -890,17 +459,6 @@ declare module com {
             public removeTag(param0: string): boolean;
             public visitInstallation(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation): void;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class Taggable {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.Taggable>;
             /**
@@ -915,17 +473,6 @@ declare module com {
             public getTags(): java.lang.Iterable<string>;
             public removeTag(param0: string): boolean;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class TemplateVisitor extends com.microsoft.windowsazure.messaging.notificationhubs.InstallationVisitor {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.TemplateVisitor>;
             public removeTemplate(param0: string): boolean;
@@ -939,17 +486,6 @@ declare module com {
             public visitInstallation(param0: com.microsoft.windowsazure.messaging.notificationhubs.Installation): void;
             public getTemplates(): java.lang.Iterable<java.util.Map.Entry<string, com.microsoft.windowsazure.messaging.notificationhubs.InstallationTemplate>>;
           }
-        }
-      }
-    }
-  }
-}
-
-declare module com {
-  export module microsoft {
-    export module windowsazure {
-      export module messaging {
-        export module notificationhubs {
           export class UserIdVisitor extends com.microsoft.windowsazure.messaging.notificationhubs.InstallationVisitor {
             public static class: java.lang.Class<com.microsoft.windowsazure.messaging.notificationhubs.UserIdVisitor>;
             public setUserId(param0: string): boolean;

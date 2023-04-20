@@ -1,25 +1,19 @@
 import { Component } from '@angular/core';
 // eslint-disable-next-line @nrwl/nx/enforce-module-boundaries
-import { AzurePushNotification } from 'ns-azure-push-notification';
+import { DemoSharedAzureMessaging } from '@demo/shared';
 @Component({
   selector: 'demo-home',
   templateUrl: 'home.component.html',
 })
 export class HomeComponent {
-  azurePushNotifications = new AzurePushNotification();
+  demoShared = new DemoSharedAzureMessaging();
   constructor() {
-    this.azurePushNotifications.init('Endpoint=sb://UPSNotifications.servicebus.windows.net/;SharedAccessKeyName=DefaultListenSharedAccessSignature;SharedAccessKey=1BiPsxc6efJuEcSiho8Uij/KGO8OxWBGSbWX8zTbxy8=', 'UPSHub').then((x) => {
-      console.log('Azure Push Notifications init', x);
-    });
-
-    this.azurePushNotifications.on('didReceiveNotification', (x) => {
-      console.log('Azure Push Notifications didReceiveNotification', x);
-    });
+    this.demoShared.testIt();
   }
 
   demos = [
     {
-      name: 'ns-azure-push-notification',
+      name: 'azure-messaging',
     },
   ];
 }

@@ -1,7 +1,7 @@
-# ns-azure-push-notification
+# @oyemade/azure-messaging
 
 ```javascript
-npm install ns-azure-push-notification
+npm install @oyemade/azure-messaging
 ```
 
 ## Usage

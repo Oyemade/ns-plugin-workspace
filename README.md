@@ -1,4 +1,4 @@
-- [ns-azure-push-notification](packages/ns-azure-push-notification/README.md)
+- [azure-messaging](packages/azure-messaging/README.md)
 
 # How to use?
 

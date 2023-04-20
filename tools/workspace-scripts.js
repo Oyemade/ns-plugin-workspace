@@ -55,17 +55,17 @@ module.exports = {
       },
     },
     '⚙️': {
-      script: `npx cowsay "@ups-test/* packages will keep your ⚙️ cranking"`,
-      description: '_____________  @ups-test/*  _____________',
+      script: `npx cowsay "@oyemade/* packages will keep your ⚙️ cranking"`,
+      description: '_____________  @oyemade/*  _____________',
     },
     // packages
     // build output is always in dist/packages
-    '@ups-test': {
-      // ns-azure-push-notification
-      'ns-azure-push-notification': {
+    '@oyemade': {
+      // azure-messaging
+      'azure-messaging': {
         build: {
-          script: 'nx run ns-azure-push-notification:build.all',
-          description: 'ns-azure-push-notification: Build',
+          script: 'nx run azure-messaging:build.all',
+          description: 'azure-messaging: Build',
         },
       },
       'build-all': {
@@ -78,12 +78,12 @@ module.exports = {
       description: '_____________  Focus (VS Code supported)  _____________',
     },
     focus: {
-      'ns-azure-push-notification': {
-        script: 'nx run ns-azure-push-notification:focus',
-        description: 'Focus on ns-azure-push-notification',
+      'azure-messaging': {
+        script: 'nx run azure-messaging:focus',
+        description: 'Focus on azure-messaging',
       },
       reset: {
-        script: 'nx g @ups-test/plugin-tools:focus-packages',
+        script: 'nx g @oyemade/plugin-tools:focus-packages',
         description: 'Reset Focus',
       },
     },

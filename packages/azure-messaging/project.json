@@ -1,23 +1,23 @@
 {
-  "name": "ns-azure-push-notification",
+  "name": "azure-messaging",
   "$schema": "../../node_modules/nx/schemas/project-schema.json",
   "projectType": "library",
-  "sourceRoot": "packages/ns-azure-push-notification",
+  "sourceRoot": "packages/azure-messaging",
   "targets": {
     "build": {
       "executor": "@nrwl/js:tsc",
       "options": {
-        "outputPath": "dist/packages/ns-azure-push-notification",
-        "tsConfig": "packages/ns-azure-push-notification/tsconfig.json",
-        "packageJson": "packages/ns-azure-push-notification/package.json",
-        "main": "packages/ns-azure-push-notification/index.d.ts",
+        "outputPath": "dist/packages/azure-messaging",
+        "tsConfig": "packages/azure-messaging/tsconfig.json",
+        "packageJson": "packages/azure-messaging/package.json",
+        "main": "packages/azure-messaging/index.d.ts",
         "assets": [
-          "packages/ns-azure-push-notification/*.md",
-          "packages/ns-azure-push-notification/index.d.ts",
+          "packages/azure-messaging/*.md",
+          "packages/azure-messaging/index.d.ts",
           "LICENSE",
           {
             "glob": "**/*",
-            "input": "packages/ns-azure-push-notification/platforms/",
+            "input": "packages/azure-messaging/platforms/",
             "output": "./platforms/"
           }
         ],
@@ -32,14 +32,10 @@
     "build.all": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": [
-          "node tools/scripts/build-finish.ts ns-azure-push-notification"
-        ],
+        "commands": ["node tools/scripts/build-finish.ts azure-messaging"],
         "parallel": false
       },
-      "outputs": [
-        "dist/packages/ns-azure-push-notification"
-      ],
+      "outputs": ["dist/packages/azure-messaging"],
       "dependsOn": [
         {
           "target": "build.all",
@@ -54,18 +50,14 @@
     "focus": {
       "executor": "nx:run-commands",
       "options": {
-        "commands": [
-          "nx g @nativescript/plugin-tools:focus-packages ns-azure-push-notification"
-        ],
+        "commands": ["nx g @nativescript/plugin-tools:focus-packages azure-messaging"],
         "parallel": false
       }
     },
     "lint": {
       "executor": "@nrwl/linter:eslint",
       "options": {
-        "lintFilePatterns": [
-          "packages/ns-azure-push-notification/**/*.ts"
-        ]
+        "lintFilePatterns": ["packages/azure-messaging/**/*.ts"]
       }
     }
   },
